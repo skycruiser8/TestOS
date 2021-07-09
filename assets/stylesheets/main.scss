@@ -1,0 +1,30 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+// Theme skin
+@import "basically-basic/themes/{{ site.data.theme.skin | default: 'default' }}";
+
+@import "basically-basic";
+
+.menu a {
+    font-size: large;
+}
+
+.contact-list a {
+    font-size: small;
+}
+
+.sidebar {
+    @include breakpoint($large) {
+        max-width: ($sidebar-width);
+      }
+}
+
+.is--pushed {
+    @include breakpoint($large) {
+      transform: translateX($sidebar-width);
+    }
+  }
