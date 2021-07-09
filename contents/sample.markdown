@@ -41,9 +41,9 @@ In either case, the syntax is the same: \!\[Alternate Text \(if image fails to l
 In the case of remote images, the URL can be entered directly. In the case of internal image service, the following steps apply:
 
 1. Put the image file in `assets/images` folder
-2. Input `{{ site.url }}/assets/images/<filename>` as the image URL
+2. Input `\{\{ site.baseurl \}\}/assets/images/<filename>` as the image URL
 
-![Linux Wallpaper]({{ site.url }}/assets/images/981856.png)
+![Linux Wallpaper]({{ site.baseurl }}/assets/images/981856.png)
 
 Actually, image files can be arbitrarily placed anywhere within the project. In cases when you want to put the image in folders other than the default assets folder, the directory path can be used with the project's root directory as the root (/)
 
