@@ -1,0 +1,39 @@
+<nav class="uk-light" uk-navbar>
+    <div class="uk-navbar-left">
+        <a class="uk-navbar-item uk-logo" href="{{ site.url }}">
+            <span>
+                <img class="image-rounded" src="{{ site.baseurl }}/favicon.ico" alt="Mr. Yoda Yoda" uk-img>
+            </span>
+            Operating Systems
+        </a>
+    </div>
+
+    <div class="uk-navbar-right">
+        <a href="#links" class="uk-navbar-item" uk-icon="icon: table" uk-toggle></a>
+    </div>
+</nav>
+
+<div id="links" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+        <br>
+
+        <div class="uk-nav-center">
+            <img class="image-rounded" src="{{ site.baseurl }}/favicon.ico" alt="Mr. Yoda Yoda" uk-img>
+            <a href="{{ site.url }}" class="uk-navbar-item uk-logo">Operating Systems</a>
+        </div>
+
+        
+
+        <ul class="uk-nav">
+            <li><a href="">A</a></li>
+            <li><a href="">B</a></li>
+            <li><a href="">C</a></li>
+            <li><a href="">D</a></li>
+            <li><a href="">E</a></li>
+        </ul>
+
+    </div>
+</div>

@@ -20,25 +20,24 @@
 
 title: Operating Systems
 email: operatingsystems@vlsm.org
-baseurl: "/TestOS" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-logo: favicon.ico
-twitter_username: jekyllrb
-github_username:  UI-FASILKOM-OS
-
-author:
-  name: Operating Systems
-  picture: /favicon.ico
-
-# Contents
 description: >-
-  This website is dedicated to share knowledge and information
-  regarding Operating Systems.
+  This site is used to collect information regarding Operating Systems
+  course (CSGE602055) in Fasilkom UI. Welcome and enjoy the knowledge
+  disseminated in this page.
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  OSP4DISS
 
 # Build settings
-theme: jekyll-theme-basically-basic
 plugins:
-  - jekyll-feed
+  - "jekyll-github-metadata"
+
+layout: default
+
+# Author information
+author:
+  name: "Operating Systems"
+  email: "operatingsystems@vlsm.org"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -48,16 +47,14 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  # - contents/sample.markdown
-  # - _posts/1970-01-01-sample.markdown
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
