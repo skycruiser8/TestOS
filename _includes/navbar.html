@@ -2,7 +2,7 @@
     <div class="uk-navbar-left">
         <a class="uk-navbar-item uk-logo" href="{{ site.url }}{{ site.baseurl }}">
             <span>
-                <img class="image-rounded" src="{{ site.baseurl }}/favicon.ico" alt="Mr. Yoda Yoda" uk-img>
+                <img class="image-rounded nav-logo" src="{{ site.baseurl }}/favicon.ico" alt="Mr. Yoda Yoda" uk-img>
             </span>
             Operating Systems
         </a>
@@ -36,8 +36,17 @@
 
         <!-- Page List -->
         <ul class="uk-nav">
+            <li class="uk-nav-header">Pages</li>
             {% for page in site.pages %}
                 <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+            {% endfor %}
+        </ul>
+
+        <!-- Links List (Sourced from _config.yml) -->
+        <ul class="uk-nav">
+            <li class="uk-nav-header">Links</li>
+            {% for link in site.links %}
+                <li><a href="{{ link.url }}">{{ link.name }}</a></li>
             {% endfor %}
         </ul>
 

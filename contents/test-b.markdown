@@ -1,4 +1,4 @@
 ---
 title: B
-permalink: /a/
+permalink: /b/
 ---

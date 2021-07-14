@@ -58,3 +58,27 @@ author:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Content configurations
+disclaimer:
+
+revision: V000--01-Jan-1970
+
+links:
+  # Format Example
+  # - <newline>
+  #   name: Link name (will be shown as the link's text)
+  #   url: Link URL
+  -
+    name: SCeLE
+    url: https://scele.cs.ui.ac.id/
+  - 
+    name: os.vlsm.org
+    url: https://os.vlsm.org/
+
+footer:
+  copyright: © 2021
+
+
+# Google Analytics
+google_analytics: ""

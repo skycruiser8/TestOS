@@ -11,4 +11,17 @@
 
     <script src="{{ site.baseurl }}/assets/js/uikit.js"></script>
     <script src="{{ site.baseurl }}/assets/js/uikit-icons.js"></script>
+
+    <!-- Google Analytics -->
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', '{{ site.google_analytics }}');
+        </script>
+    {% endif %}
+
 </head>
