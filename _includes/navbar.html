@@ -20,19 +20,25 @@
 
         <br>
 
+        <!-- Header -->
         <div class="uk-nav-center">
             <img class="image-rounded" src="{{ site.baseurl }}/favicon.ico" alt="Mr. Yoda Yoda" uk-img>
             <a href="{{ site.url }}{{ site.baseurl }}" class="uk-navbar-item uk-logo">Operating Systems</a>
         </div>
 
+
+        <!-- Social Icons -->
+        <ul class="uk-iconnav">
+            <li class="uk-align-center"><a href="{{ site.github.repository_url }}" uk-icon="icon: github"></a></li>
+        </ul>
+
         
 
+        <!-- Page List -->
         <ul class="uk-nav">
-            <li><a href="">A</a></li>
-            <li><a href="">B</a></li>
-            <li><a href="">C</a></li>
-            <li><a href="">D</a></li>
-            <li><a href="">E</a></li>
+            {% for page in site.pages %}
+                <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+            {% endfor %}
         </ul>
 
     </div>
