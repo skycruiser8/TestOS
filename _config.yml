@@ -24,9 +24,6 @@ description: >-
   This site is used to collect information regarding Operating Systems
   course (CSGE602055) in Fasilkom UI. Welcome and enjoy the knowledge
   disseminated in this page.
-# baseurl: "" # the subpath of your site, e.g. /blog
-# url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  OSP4DISS
 
 # Build settings
 plugins:
@@ -60,8 +57,6 @@ author:
 #   - vendor/ruby/
 
 # Content configurations
-disclaimer:
-
 revision: V000--01-Jan-1970
 
 links:

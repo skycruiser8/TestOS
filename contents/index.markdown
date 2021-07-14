@@ -1,6 +1,7 @@
 ---
 title: Home
 permalink: /
+include_in_navbar: false
 ---
 
 ## Welcome
