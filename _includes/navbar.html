@@ -38,7 +38,7 @@
             <li class="uk-nav-header">Pages</li>
             {% for page in site.pages %}
                 {% if page.include_in_navbar == true %}
-                    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                    <li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
                 {% endif %}
             {% endfor %}
         </ul>
