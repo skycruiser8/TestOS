@@ -5,14 +5,14 @@
     <meta name="author" content="{{ site.author.name }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uikit.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/uikit-rtl.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
+    <link rel="stylesheet" href="{{ '/assets/css/uikit.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/uikit-rtl.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
 
-    <script src="{{ site.baseurl }}/assets/js/uikit.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/uikit-icons.js"></script>
+    <script src="{{ '/assets/js/uikit.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/uikit-icons.js' | relative_url }}"></script>
 
-    <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
 
     <!-- Google Analytics -->
     {% if site.google_analytics and jekyll.environment == 'production' %}
