@@ -62,11 +62,55 @@ revision: V000--01-Jan-1970
 footer:
   copyright: © 2021
 
+# Logo configuration (for navbar). Alt text will be used if failed
+logo: /favicon.ico
+alt_text: Mr. Yoda Yoda
+
+# Internal links configuration (for navbar)
+# This is ONLY USED for links inside the site since it will be plugged into site's URL
+# URL should be formed in /<directory> format (/ = project root directory)
+internal_links:
+  # Example format:
+  # - <newline>
+  #   name: "Example Internal Links"
+  #   url: "/Gemfile"
+  -
+    name: Home
+    url: "/"
+  - 
+    name: Listings
+    url: "/000.html"
+  -
+    name: Links
+    url: "/links/"
+  -
+    name: Tips
+    url: "/tips/"
+  -
+    name: ZIP File
+    url: "/template.zip"
+  -
+    name: Tarball
+    url: "/template.tar.bz2"
+  - 
+    name: About
+    url: "/about/"
+
+# External links configuration (for navbar)
+# This is ONLY USED for links OUTSIDE the site or formed as absolute URLs
+external_links:
+  # Example format:
+  # - <newline>
+  #   name: "Example External Links"
+  #   url: "https://www.google.com"
+  -
+    name: GitHub
+    url: "https://github.com/skycruiser8/TestOS/"
+  - 
+    name: Web
+    url: "https://skycruiser8.github.io/TestOS/"
+  
+
 
 # Google Analytics
 google_analytics: ""
-
-# Override default gh-pages branch (Use if deploying to main branch)
-github:
-  source:
-    branch: main

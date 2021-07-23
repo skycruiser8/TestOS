@@ -3,7 +3,7 @@
         <a href="#links" class="uk-navbar-item" uk-icon="icon: table" uk-toggle></a>
         <a class="uk-navbar-item uk-logo" href="{{ '/' | absolute_url }}">
             <span>
-                <img class="image-rounded nav-logo" src="{{ '/favicon.ico' | relative_url }}" alt="Mr. Yoda Yoda" uk-img>
+                <img class="image-rounded nav-logo" src="{{ site.logo | relative_url }}" alt="{{ site.alt_text }}" uk-img>
             </span>
             Operating Systems
         </a>
@@ -19,7 +19,7 @@
 
         <!-- Header -->
         <div class="uk-nav-center">
-            <img class="image-rounded" src="{{ '/favicon.ico' | relative_url }}" alt="Mr. Yoda Yoda" uk-img>
+            <img class="image-rounded" src="{{ site.logo | relative_url }}" alt="Mr. Yoda Yoda" uk-img>
             <a href="{{ '/' | absolute_url }}" class="uk-navbar-item uk-logo">Operating Systems</a>
         </div>
 
@@ -35,21 +35,20 @@
         <!-- Page List (for internal links) -->
         <ul class="uk-nav">
             <li class="uk-nav-header">Pages</li>
-            <li><a href="{{ '/' | relative_url }}">Home</a></li>
-            <li><a href="{{ '/000.html' | relative_url }}">Listings</a></li>
-            <li><a href="{{ '/links/' | relative_url }}">Links</a></li>
-            <li><a href="{{ '/tips/' | relative_url }}">Tips</a></li>
-            <li><a href="{{ site.github.zip_url }}">ZIP File</a></li>
-            <li><a href="{{ site.github.tar_url }}">Tarball</a></li>
-            <li><a href="{{ site.github.repository_url }}">GitHub</a></li>
-            <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-            <li><a href="{{ site.github.url }}">Web</a></li>
+            {% for internal_link in site.internal_links %}    
+                <li><a href="{{ internal_link.url | relative_url }}">{{ internal_link.name }}</a></li>
+            {% endfor %}
         </ul>
+
+        <hr>
 
         <!-- Links List (for external links)-->
         <ul class="uk-nav">
             <li class="uk-nav-header">Links</li>
-            <li><a href="https://scele.cs.ui.ac.id/">SCeLE</a></li>
+            {% for external_link in site.external_links %}    
+                <li><a href="{{ external_link.url }}">{{ external_link.name }}</a></li>
+            {% endfor %}
+        </ul>
         </ul>
 
     </div>
