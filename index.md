@@ -25,6 +25,10 @@ permalink: /
 | A | B | C |
 | A | B | C |
 
+## Youtube Example
+
+{% include youtube.html youtube_url='https://www.youtube.com/embed/OxbgFHSPvnI' %}
+
 ## Disclaimer
 
 {% include disclaimer.html %}
